@@ -1,0 +1,60 @@
+POST http://localhost:7071/api/orders
+Content-Type: application/json
+
+{"hello": "world"}
+
+
+###
+
+POST http://localhost:3000/orders
+Content-Type: 
+
+{
+  "Data": {
+    "req": {
+      "Url": "http://localhost:7071/api/orders",
+      "Method": "POST",
+      "Query": "{}",
+      "Headers": {
+        "Connection": [
+          "close"
+        ],
+        "Content-Type": [
+          "application/json"
+        ],
+        "Accept-Encoding": [
+          "gzip, deflate"
+        ],
+        "Host": [
+          "localhost:7071"
+        ],
+        "User-Agent": [
+          "vscode-restclient"
+        ],
+        "Content-Length": [
+          "18"
+        ]
+      },
+      "Params": {},
+      "Identities": "[{\"AuthenticationType\":null,\"IsAuthenticated\":false,\"Actor\":null,\"BootstrapContext\":null,\"Claims\":[],\"Label\":null,\"Name\":null,\"NameClaimType\":\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\",\"RoleClaimType\":\"http://schemas.microsoft.com/ws/2008/06/identity/claims/role\"}]",
+      "Body": "{\"hello\": \"world\"}"
+    }
+  },
+  "Metadata": {
+    "hello": "\"world\"",
+    "Query": {},
+    "Headers": {
+      "Connection": "close",
+      "Content-Type": "application/json",
+      "Accept-Encoding": "gzip, deflate",
+      "Host": "localhost:7071",
+      "User-Agent": "vscode-restclient",
+      "Content-Length": "18"
+    },
+    "sys": {
+      "MethodName": "orders",
+      "UtcNow": "2020-12-07T06:37:20.9602797Z",
+      "RandGuid": "4e6f26c1-209b-4f90-8c8e-6a1a4bc54507"
+    }
+  }
+}
